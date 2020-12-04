@@ -1,0 +1,27 @@
+==============================================================
+Laravel Extension Pack for Visual Studio Code
+=============================================================
+https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-extension-pack
+1-Laravel Blade Snippets
+2-Laravel Snippets
+3-Laravel Artisan
+4-Laravel Extra Intellisense
+5-Laravel goto view
+6-Laravel goto controller
+7-DotENV
+===============================================================
+Yajra DataTable
+====================================================
+1-composer require yajra/laravel-datatables
+config->app.php
+'providers' => 
+\Yajra\DataTables\DataTablesServiceProvider::class,
+'aliases' =>
+'DataTables'=>\Yajra\DataTables\Facades\DataTables::class
+php artisan vendor:publish --provider="Yajra\DataTables\DataTablesServiceProvider"
+php artisan make:controller EmployeeController
+php artisan make:model Employee -m
+php artisan make:factory EmployeeFactory --model=Employee
+php artisan tinker
+Employee::factory()->count(500)->create()
+php artisan datatables:make Employee
